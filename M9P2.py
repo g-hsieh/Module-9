@@ -18,8 +18,6 @@ while runProgram.lower() in ("y", "yes"):
     playerCount += 1
 
     print("\nLast Name:", lastName)
-    print("Number of hits:", num_hits)
-    print("Number of bats:", num_bats)
     print(f"Batting Average: {Average:.3f}")
 
     runProgram = input("\nWould you like to enter another player's hits and bats? (Y/N): ")
