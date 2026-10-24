@@ -1,5 +1,22 @@
+def get_lastName():
+    lastName = input("What is your last name? ")
+    return lastName
+
+def get_districtCode():
+    districtCode = ("What's the district code? ")
+    return districtCode
+
+def get_creditHours():
+    creditHours = ("How many credit hours did you take? ")
+    return creditHours
+
 def Tuition(ratePerCredit, creditHours):
     return ratePerCredit * creditHours
+
+def display_result(lastName, districtCode, creditHours, Tuition):
+    print("\nEmployee Information")
+    print(f"Last Name: {lastName}")
+    print(f"Tuition: ${Tuition:,.2f}")
 
 studentCount = 0
 totalTuition = 0
@@ -32,9 +49,6 @@ while runProgram.lower() in ("y", "yes"):
 
     print("\nStudent Information")
     print(f"Last Name: {lastName}")
-    print(f"District Code: {districtCode.upper()}")
-    print(f"Rate Per Credit: ${payRate:,.2f}")
-    print(f"Credit Hours: {creditHours:.2f}")
     print(f"Tuition Owed: ${tuition:,.2f}")
 
     runProgram = input(
